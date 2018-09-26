@@ -1,0 +1,16 @@
+<body>
+    <h2>正在进行:<span>{{todolist.length}}</span></h2>
+    <ul>
+        <li id="todo0" *ngFor='let item of todolist ;let i=index;' >   
+            <input  (click)="change(i,true)" type="checkbox">
+            <button (click)='del(i,true)'>删除</button>
+        </li>
+    </ul>
+    <h2>已经完成:<span>{{dolist.length}}</span></h2> 
+    <ul>
+       <li>
+          <input (click)="change(i,false)" type="checkbox"/>
+            <button (click)='del(i,false)'>删除</button>
+        </li>
+    </ul>
+    </body>
