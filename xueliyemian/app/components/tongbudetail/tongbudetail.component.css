@@ -1,0 +1,30 @@
+.list li{
+   float:left;
+}
+
+/* .active{
+    color:red;
+    font-size:50px;
+} */
+.container{
+    width:100%;
+    height: 110px;
+    background-color: rgb(236, 236, 236);
+    border-top: 1px solid rgb(218, 216, 216);
+    border-bottom: 1px solid rgb(218, 216, 216);
+}
+.container h3{
+    padding-top: 30px;
+    padding-left: 150px;
+    /* margin-top: 30px; */
+    font-size: 20px;
+    font-weight: inherit;
+}
+.container ul{
+    padding-left: 160px;
+}
+.container ul li{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 50px;
+}

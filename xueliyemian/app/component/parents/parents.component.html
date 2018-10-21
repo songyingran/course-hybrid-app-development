@@ -1,0 +1,18 @@
+<!-- <p>
+  这是父组件
+</p>
+<!-- <app-child1 getvalue()="del($event)" [arr]="data"></app-child> -->
+<h1>这是父组件</h1>
+<app-child [arr]="data" [arr1]="data" (delIndex)="del($event)">
+  <h3 class="header">这是TOdOLIST页面</h3>
+  <footer class="footer">这是底部</footer>
+</app-child>
+<app-child [arr]="data1" [arr1]="data" (delIndex)="del($event)">
+  <p class="header">这是列表的开始</p>
+  <p class="footer"> 这是列表的底部</p>
+</app-child>
+<button (click)="add()">添加一条</button>
+ 
+
+
+  

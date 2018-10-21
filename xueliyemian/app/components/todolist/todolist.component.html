@@ -1,0 +1,40 @@
+<p>
+  todolist works!
+</p>
+<!-- <h3 [innerHTML]="txt"></h3>
+<button (keydown)="fun($event)" *ngIf="20>10">点击</button>
+<input type="text" [(ngModel)] = "txt">
+<ul>
+    <li *ngFor="let item of arr;let i = index;">
+        <input type="checkbox">这是第{{item}}个,下标是{{i}}
+        <button (click)="del(i)">删除</button>
+    </li>
+</ul> -->
+<h1>这是Todo页面</h1>
+<!--1,写入输入框标签，绑定键盘事件-->
+<input [(ngModel)]="txt" type="text" (keydown)="getValue($event)"/>
+<h3>正在进行<span>{{arr.length-counter}}</span></h3>
+<!--2,写待办事项的呈现列表-->
+<ul>
+    <ng-container *ngFor="let item of arr; let i = index;">
+            <li *ngIf="!item.done">
+                <input (click)="change(i)" type="checkbox">
+                {{item.title}}
+                <!--3,删除按钮绑定点击事件-->
+                <button (click)="delete(i)">删除</button>     
+            </li>
+    </ng-container>
+</ul>
+
+<h3>已经完成<span>{{counter}}</span></h3>
+<ul>
+    <ng-container *ngFor="let item of arr; let i = index;">
+            <li *ngIf="item.done">
+                <input checked (click)="change(i)" type="checkbox">
+                {{item.title}}
+                <!--3,删除按钮绑定点击事件-->
+                <button (click)="delete(i)">删除</button>     
+            </li>
+    </ng-container>
+</ul>
+

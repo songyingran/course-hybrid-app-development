@@ -1,0 +1,20 @@
+<div class="liebiao">
+  <div class="liebiao-left"><button>课程分类</button></div>
+  <div class="liebiao-right"><button>课程体系</button></div>
+</div>
+
+<div class="container">
+  <ul>
+    <li *ngFor="let course2 of courses2;">
+      <a [routerLink]="['/course',course2.id2]">
+          <img src="{{course2.images2}}" alt="">
+          <h3 class="name">{{course2.course2Name}}</h3>
+          <div class="one"><span>{{course2.present2}}</span></div>
+          <div class="two">
+           <span class="span1">课时{{course2.period2}}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="span2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成员{{course2.person2}}</span>
+          </div>
+      </a>
+    </li>
+  </ul>
+</div>

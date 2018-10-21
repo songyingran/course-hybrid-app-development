@@ -1,0 +1,99 @@
+
+.left{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 250px;
+    float: left;
+}
+
+.left-top{
+    height: 250px;
+    width: 250px;
+}
+.name{
+    font-size: 25px;
+    text-align: center;
+    margin-left: 70px;
+}
+.fan {
+    font-size: 20px;
+    margin-left: 35px;
+}
+.guanzhu{
+    font-size: 20px;
+    margin-left: 100px;
+}
+.left-bottom{
+    list-style: none;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    line-height: 40px;
+    color: black;
+}
+.left-bottom a{
+    color: black;
+}
+.you{
+    float: right;
+}
+.right{
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 2px solid rgb(196, 190, 190);
+    height: 570px;
+    width: 1000px;
+    float: left;
+    box-shadow: 3px;
+    border-radius: 5px;
+}
+.right-top{
+    height: 30px;
+    width: 1000px;
+}
+.right-top-left{
+    
+    font-size: 20px;
+}
+.right-top-left li{
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    float: left;
+    color:black;
+}
+.right-top-left a{
+    color: black;
+}
+.right-top-center{
+    width: 1000px;
+    float: left;
+}
+.right-top-center hr{
+    width: 850px;
+    margin-left: 75px;
+    color: darkgray;
+}
+.sebu{
+    float: right;
+     margin-right: 80px;
+     margin-top: 40px;
+}
+.twosear{
+    height: 30px;
+    width: 180px;
+    
+}
+.button{
+    height: 30px;
+    width: 50px;
+    float: right;
+}
+.finish{
+    text-align: center;
+    font-size: 25px;
+    height: 540px;
+    width: 1000px;
+    float: left;
+    margin-top: 230px;
+}

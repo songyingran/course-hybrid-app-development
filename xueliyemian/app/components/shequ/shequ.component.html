@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="container-left">
+    <ul>
+      <li *ngFor="let sq of shequ;">
+        <a [routerLink]="['/shequ',sq.essayid]">
+            <div class="top">
+              <div class="touxiang"><img src="{{sq.touxiang}}" alt=""></div>
+              <div class="top-center"><img src="{{sq.img}}" alt=""></div>
+              <div class="top-right">
+                <div class="top-right-top"><span>{{sq.title}}</span></div>
+                <div class="top-right-bottom"><span>{{sq.essay}}</span></div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="bottom-left">
+                <span>{{sq.name}}&nbsp;·</span>
+                <span>&nbsp;{{sq.time}}</span>
+              </div>
+              <div class="bottom-right">
+                <span>阅读{{sq.read}}&nbsp;&nbsp;|</span>
+                <span>&nbsp;&nbsp;评论{{sq.talk}}</span>
+              </div>
+            </div>
+        </a>
+        <hr/>
+      </li>
+    </ul>
+  </div>
+  <div class="container-right"></div>
+</div>
